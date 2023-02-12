@@ -31,12 +31,10 @@ describe('FakeService', () => {
     fakeService.getDataV1().subscribe({
       error: err => {
         expect(err.message).toContain('404');
-
+        expect(err.status).toBe(404);
+        done();
       }
     })
-    done();
-
-
   });
 
 })

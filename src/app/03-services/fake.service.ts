@@ -12,8 +12,8 @@ export class FakeService {
 
   getDataV1(): Observable<any> {
     const url = 'https://example.com/todos';
-    return this.http.get(url).pipe(catchError((_) => {
-      throw new Error()
+    return this.http.get(url).pipe(catchError((error) => {
+      throw error
     }));
   }
 }
