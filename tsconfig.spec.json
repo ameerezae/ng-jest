@@ -6,7 +6,11 @@
     "types": [
       "jest"
     ],
-    "module": "CommonJS"
+    "module": "CommonJS",
+    "baseUrl": "./src",
+    "paths": {
+      "@app/*": ["app/*"]
+    }
   },
   "files": [
     "src/setup.jest.ts",

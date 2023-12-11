@@ -1,4 +1,4 @@
-import {FakeService} from "./fake.service";
+import {FakeService} from "@app/03-services/fake.service";
 
 
 export class TodosComponent {
